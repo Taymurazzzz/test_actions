@@ -24,7 +24,7 @@ jobs:
       run: docker run --name container-for-lab image-for-lab
       
     - name: Copy File From Container
-      run: sudo docker cp container-for-lab:/build_output.txt ${{ github.workspace }}
+      run: sudo docker cp container-for-lab:/build_output.txt $GITHUB_WORKSPACE
 
     - name: Push File To Repo
       run: |
