@@ -28,8 +28,8 @@ jobs:
 
     - name: Push File To Repo
       run: |
-        git config --global user.email "7500525@list.ru"
-        git config --global user.name "Taymurazzzz"
+        git config --global user.email "actions@github.com"
+        git config --global user.name "GitHub Actions"
         git add build_output.txt
         git commit -m "Result of building image has been pushed on repo"
         git push origin main
